@@ -1,0 +1,163 @@
+body{
+    display: flex;
+    flex-direction: row;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 32px;
+    margin: 0;
+    background-image: url(images/mymind-XUlsF9LYeVk-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1, h2, p{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+div{
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+form div{
+    padding: 0px;
+}
+
+.image-part, .form-part{
+    height: 100vh;
+}
+
+.image-part{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+}
+
+img{
+    width: 240px;
+    opacity: 60%;
+}
+
+.content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 32px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(140, 93, 5);
+}
+
+a:hover{
+    color: rgb(212, 140, 5);
+}
+
+form{
+    display: flex;
+    gap: 32px;
+}
+
+.form-section{
+    background-color: rgba(197, 197, 197, 0.298);
+    border-radius: 12px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+}
+
+.form-parts{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+input{
+    border-radius: 12px;
+    border: none;
+    min-width: 200px;
+    min-height: 24px;
+    padding-left: 8px;
+    background-color: rgba(255, 255, 255, 0.646);
+    outline: none;
+}
+
+input:focus{
+    background-color: rgba(255, 255, 255, 0.881);
+    border: 2px rgb(4, 73, 234) solid;
+}
+
+.error-message{
+    visibility: hidden;
+    font-size: small;
+    padding-left: 8px;
+    padding-top: 4px;
+    color: white;
+}
+
+input:not(:focus):invalid{
+    background-color: rgba(255, 255, 255, 0.881);
+    border: 2px rgb(234, 54, 4) solid;
+}
+
+input:not(:focus):invalid ~ .error-message{
+    visibility: visible;
+}
+
+.button-section{
+    background-color: rgba(197, 197, 197, 0.298);
+    border-radius: 12px;
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+button{
+    background-color: rgba(197, 197, 197, 0.298);
+    border-radius: 12px;
+    border: none;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.646);
+    max-width: 150px;
+    padding: 12px 8px;
+    color: orange;
+}
+
+button:hover{
+    background-color: rgba(255, 255, 255, 0.881);
+    color: rgb(255, 174, 0);
+}
+
+.heading{
+    background-color: rgba(197, 197, 197, 0.298);
+    border-radius: 12px;
+    min-width: 250px;
+    max-width: 486px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-parts div{
+    display: flex;
+    flex-direction: column;
+}
